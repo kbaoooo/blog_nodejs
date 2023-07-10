@@ -10,4 +10,4 @@ class NewsController {
     }
 }
 
-export default new NewsController;
+export default new NewsController();

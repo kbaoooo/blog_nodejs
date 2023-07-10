@@ -10,4 +10,4 @@ class SiteController {
     }
 }
 
-export default new SiteController;
+export default new SiteController();

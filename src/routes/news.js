@@ -3,7 +3,7 @@ import { Router } from 'express';
 
 const newsRouter = Router();
 
-newsRouter.use('/:slug', NewsController.show)
-newsRouter.use('/', NewsController.index)
+newsRouter.use('/:slug', NewsController.show);
+newsRouter.use('/', NewsController.index);
 
 export default newsRouter;
