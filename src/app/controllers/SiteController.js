@@ -1,6 +1,6 @@
 class SiteController {
     // [GET] home
-    index(req, res) {
+        index(req, res) {
         res.render('home');
     }
 
