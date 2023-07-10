@@ -27,7 +27,7 @@
         "url": "https://github.com/kbaoooo/blog_nodejs/issues"
     },
     "homepage": "https://github.com/kbaoooo/blog_nodejs#readme",
-    "lint-stage": {
+    "lint-staged": {
         "src/**/*.{js, json, scss, css, hbs}": "prettier --write --tab-width 4 --single-quote --trailing-comma all"
     },
     "husky": {
