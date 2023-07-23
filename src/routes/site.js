@@ -3,7 +3,7 @@ import { Router } from 'express';
 
 const siteRouter = Router();
 
-siteRouter.use('/search', SiteController.search);
-siteRouter.use('/', SiteController.index);
+siteRouter.get('/search', SiteController.search);
+siteRouter.get('/', SiteController.index);
 
 export default siteRouter;

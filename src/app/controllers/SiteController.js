@@ -1,7 +1,17 @@
+import CourseModel from '../models/Course.js';
+import mongooseSupporter from '../../ultis/mongoose.js';
+
 class SiteController {
-    // [GET] home
-    index(req, res) {
-        res.render('home');
+    // [GET] courses
+    index(req, res, next) {
+        CourseModel.find({})
+            .then((collections) => {
+                res.render('home', {
+                    collections:
+                        mongooseSupporter.multipleMongooseToObject(collections),
+                });
+            })
+            .catch((err) => next(err));
     }
 
     // [GET] search
